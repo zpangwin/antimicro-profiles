@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gamecontroller configversion="19" appversion="2.23">
+    <!--The SDL name for a joystick is included for informational purposes only.-->
+    <sdlname>X360 Wireless Controller</sdlname>
+    <!--The GUID for a joystick is included for informational purposes only.-->
+    <guid>030000005e040000a102000000010000</guid>
+    <names/>
+    <sets>
+        <set index="1">
+            <trigger index="1">
+                <throttle>positivehalf</throttle>
+            </trigger>
+            <trigger index="2">
+                <throttle>positivehalf</throttle>
+            </trigger>
+            <button index="6">
+                <slots>
+                    <slot>
+                        <code>1000</code>
+                        <mode>hold</mode>
+                    </slot>
+                    <slot>
+                        <code>0x47</code>
+                        <mode>keyboard</mode>
+                    </slot>
+                    <slot>
+                        <code>10</code>
+                        <mode>release</mode>
+                    </slot>
+                    <slot>
+                        <code>0x5a</code>
+                        <mode>keyboard</mode>
+                    </slot>
+                    <slot>
+                        <code>990</code>
+                        <mode>release</mode>
+                    </slot>
+                </slots>
+            </button>
+        </set>
+    </sets>
+</gamecontroller>
