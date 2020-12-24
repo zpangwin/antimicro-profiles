@@ -1,0 +1,274 @@
+=====================================================================================================
+Guide to modify gamepad control layout in the Witcher 2 by GuardianAngel42
+=====================================================================================================
+ Guide to modify gamepad control layout in the Witcher 2
+If any of you are like me, you preferred to play this game with a gamepad (in my case an Xbox 360 Controller) but found that the control layout left some things to be desired.
+
+For me, I tended not to use the Witcher Signs much (aside from Quen) because in order to use a different Sign you needed to bring up the quickmenu which had efficiency problems.
+
+Today I'm going to show you how to modify the User.ini file to customize the button layout and add functionality previously only available by using a keyboard and mouse.
+
+These examples, while specific, are merely that; examples. You can mix up what you change to suit your tastes.
+
+So without further ado, here we go...
+
+STEP ONE:
+
+First you're going to want to locate and open your "User.ini" file. This file can be opened in any basic Notepad-like text editor.
+
+To find this file, navigate to the "Config" folder inside your "Witcher 2" folder, typically located in "My Documents" (Default is C:\Users\[Username]\My Documents\Witcher 2).
+
+The "User.ini" file will be inside this folder.
+
+Make a backup of this file. There are other ways to avoid getting stuck with a non-functioning User.ini file but this is the tried and true method. Others will be discussed later.
+
+STEP TWO:
+
+Start The Witcher 2. Do not launch the game; instead select "Options" from the Launcher menu. In the resulting window, select "Input Settings" at the bottom (this direction is applicable regardless of whether you have chosen to see the advanced options).
+
+In "Input Settings" record the settings for each function in both the Keyboard AND Gamepad tabs. Ensure you include descriptive names like "Cast Aard" vs. "Hotkey 1" (It would sort of defeat the purpose of this step if you didn't and forgot the names ).
+
+Exit completely out of "Input Settings". This is MANDATORY (changes will not be applied if you make them while this window is opened).
+
+STEP THREE:
+
+Now we're ready to start making changes. Open "User.ini" in your chosen text editor. If you don't have a third party program to edit text with, Microsoft's Notepad will work fine.
+
+In the file you should see something like the below:
+Code:
+
+[InputQWERTY]
+IK_0=(Gamekey=GI_Holster,Value=1.000000)
+IK_1=(Gamekey=GI_Steel,Value=1.000000)
+IK_2=(Gamekey=GI_Silver,Value=1.000000)
+IK_3=(Gamekey=GI_Hotkey03,Value=1.000000)
+IK_4=(Gamekey=GI_Hotkey04,Value=1.000000)
+IK_5=(Gamekey=GI_Hotkey05,Value=1.000000)
+IK_6=(Gamekey=GI_Hotkey06,Value=1.000000)
+IK_7=(Gamekey=GI_Hotkey07,Value=1.000000)
+IK_8=(Gamekey=GI_Hotkey08,Value=1.000000)
+IK_9=(Gamekey=GI_Hotkey09,Value=1.000000)
+IK_A=(Gamekey=GI_AxisLeftX,Value=-1.000000)
+IK_Alt=(Gamekey=GI_LockTarget,Value=1.000000)
+IK_C=(GameKey="GI_Character",Value=1)
+IK_CapsLock=(Gamekey=GI_WalkFlag,Value=1.000000)
+IK_D=(Gamekey=GI_AxisLeftX,Value=1.000000)
+IK_Delete=(GameKey="GI_Cancel",Value=1)
+IK_Down=(GameKey="GI_Down",Value=1)
+IK_E=(Gamekey=GI_Block,Value=1.000000)
+IK_Escape=(GameKey="GI_Exit",Value=1)
+IK_F=(Gamekey=GI_CircleOfPower,Value=1.000000)
+IK_I=(GameKey="GI_Inventory",Value=1)
+IK_J=(GameKey="GI_Journal",Value=1)
+IK_LControl=(Gamekey=GI_FastMenu,Value=1.000000)
+IK_LShift=(Gamekey=GI_WalkSwitch,Value=1.000000)
+IK_LeftMouse=(Gamekey=GI_AttackFast,Value=1.000000)
+IK_M=(GameKey="GI_Nav",Value=1)
+IK_MouseX=(GameKey="GI_MouseX",Value=1)
+IK_MouseY=(GameKey="GI_MouseY",Value=1)
+IK_Pad_A_CROSS=(Gamekey=GI_Accept_Evade,Value=1.000000)
+IK_Pad_B_CIRCLE=(Gamekey=GI_UseAbility,Value=1.000000)
+IK_Pad_Back_Select=(GameKey="GI_TutorialHint",Value=1)
+IK_Pad_DigitDown=(Gamekey=GI_Holster,Value=1.000000)
+IK_Pad_DigitLeft=(Gamekey=GI_Steel,Value=1.000000)
+IK_Pad_DigitRight=(Gamekey=GI_Silver,Value=1.000000)
+IK_Pad_DigitUp=(Gamekey=GI_Adrenaline,Value=1.000000)
+IK_Pad_LeftAxisX=(Gamekey=GI_AxisLeftX,Value=1.000000)
+IK_Pad_LeftAxisX=(Gamekey=GI_AxisLeftX,Value=1.000000)
+IK_Pad_LeftAxisY=(Gamekey=GI_AxisLeftY,Value=1.000000)
+IK_Pad_LeftAxisY=(Gamekey=GI_AxisLeftY,Value=1.000000)
+IK_Pad_LeftShoulder=(Gamekey=GI_LockTarget,Value=1.000000)
+IK_Pad_LeftThumb=(Gamekey=GI_Medallion,Value=1.000000)
+IK_Pad_LeftTrigger=(Gamekey=GI_FastMenu,Value=1.000000)
+IK_Pad_RightAxisX=(GameKey="GI_AxisRightX",Value=1)
+IK_Pad_RightAxisY=(GameKey="GI_AxisRightY",Value=1)
+IK_Pad_RightShoulder=(Gamekey=GI_UseItem,Value=1.000000)
+IK_Pad_RightThumb=(Gamekey=GI_CircleOfPower,Value=1.000000)
+IK_Pad_RightTrigger=(Gamekey=GI_Block,Value=1.000000)
+IK_Pad_Start=(GameKey="GI_Exit",Value=1)
+IK_Pad_X_SQUARE=(Gamekey=GI_AttackFast,Value=1.000000)
+IK_Pad_Y_TRIANGLE=(Gamekey=GI_AttackStrong,Value=1.000000)
+IK_Q=(Gamekey=GI_UseAbility,Value=1.000000)
+IK_R=(Gamekey=GI_UseItem,Value=1.000000)
+IK_RightMouse=(Gamekey=GI_AttackStrong,Value=1.000000)
+IK_S=(Gamekey=GI_AxisLeftY,Value=-1.000000)
+IK_Space=(Gamekey=GI_Accept_Evade,Value=1.000000)
+IK_Up=(GameKey="GI_Up",Value=1)
+IK_W=(Gamekey=GI_AxisLeftY,Value=1.000000)
+IK_X=(Gamekey=GI_Adrenaline,Value=1.000000)
+IK_Z=(Gamekey=GI_Medallion,Value=1.000000)
+IK_F5=(Gamekey=GI_F5,Value=1.000000)
+IK_H=(Gamekey=GI_H,Value=1.000000)
+IK_Enter=(Gamekey=GI_Enter,Value=1.000000)
+IK_L=(Gamekey=,Value=1.000000)
+IK_Tab=(Gamekey=GI_TutorialHint,Value=1.000000)
+IK_Backspace=(Gamekey=,Value=1.000000)
+
+At this point, we need to find the functions we want to do, and find the buttons we want to use to do it. For example, I want to be able to use the Sign "Igni" when I press the left shoulder button of my controller.
+
+So, referencing the list of key bindings recorded earlier, I know that on Keyboard you press the hotkey "7" to immediately use "Igni".
+
+Knowing that, I know that this entry here:
+Code:
+
+IK_7=(Gamekey=GI_Hotkey07,Value=1.000000)
+
+Casts the Sign "Igni". Then what I need to know is which entry controls the left shoulder button on the gamepad. Using some reading skills and logical deduction, I know that it is this entry here:
+Code:
+
+IK_Pad_LeftShoulder=(Gamekey=GI_LockTarget,Value=1.000000)
+
+Currently it is set to control locking onto a target. Personally I've never gotten this to work and have managed just fine without it so I believe it is easy enough to do without.
+
+This is the part that may prove difficult for many of you; deciding what you can do without. With this method, you will need to know which functions are superfluous or unnecessary. That essentially means having beaten the game at least once. I've tried setting up a third party software to simply emulate the K/M, but it was nowhere near as seamless as the support provided in the game.
+
+STEP FOUR:
+
+Now it's time to edit the entries. This is a simple process of copy-and-paste but I want to expand on why it's alright to do this.
+
+In addition to "User.ini" file found in the "Config" folder we accessed earlier, there were three files entitled "INPUT_AZERTY", "Input_QWERTY", and "INPUT_QWERTZ". These three files contain all of the keybindings as backups. Should you decide to remove these changes, these files will contain the necessary information to do so.
+
+Now to actually change some stuff. Let's take what's inside the parentheses here:
+Code:
+
+IK_7=(Gamekey=GI_Hotkey07,Value=1.000000)
+
+And paste it into the parentheses here:
+Code:
+
+IK_Pad_LeftShoulder=(Gamekey=GI_LockTarget,Value=1.000000)
+
+
+Resulting in the below:
+
+
+Code:
+
+IK_Pad_LeftShoulder=(Gamekey=GI_Hotkey07,Value=1.000000)
+
+As you'll see all I've done is copy the contents of the parentheses from the first entry into those of the second entry, overwriting what was there.
+
+When you run the game, you will now be able to cast "Igni" by pressing the left shoulder button.
+
+This method applies to any other function you wish to carry over. Not much of an "Igni" fan? Do this for Yrden, Quen, or Axii. [See Update below]
+
+CLOSING THOUGHTS:
+
+From what I can tell, there are three buttons that can easily be overwritten to allow an expanded functionality. Those are the Back button, Down on the Dpad, and Left Shoulder. Those three entries are:
+
+Code:
+
+IK_Pad_Back_Select=(GameKey="GI_TutorialHint",Value=1)
+
+Code:
+
+IK_Pad_DigitDown=(Gamekey=GI_Holster,Value=1.000000)
+
+Code:
+
+IK_Pad_LeftShoulder=(Gamekey=GI_LockTarget,Value=1.000000)
+
+However, this method does allow you to change the layout completely to suit your tastes WITHIN the game's support.
+
+In my opinion it's a powerful way to customize the experience and can prove very useful when combined with clever choices of key changes.
+
+I hope this has proved useful for some of you as it has for me. Good night SPUF. Stay classy.
+
+UPDATE 4/20/2012:
+
+It has come to my attention that functions that are grayed out in the Keyboard Settings tab (Character Attribute, Inventory, Journal, Map, Quicksave, Quickload, and Exit) cannot be mapped to the gamepad. Why this is I'm not 100% sure, but I suspect it has to do with these functions being hardcoded into the game.
+
+UPDATE 4/21/2012:
+
+For those who have, or are willing to get, the keyboard/mouse emulating software Xpadder (designed to allow controller support in all games, not just those with it built in) you have options beyond what I presented above. Using Xpadder and the game's integration together, you can have seamless control while also being able to program additional functions that aren't allowed using the above method.
+
+For instance, you can program buttons of the controller to open the Inventory, quicksave, and quickload (all functions impossible using the above method).
+
+Here's a quick tutorial on how to do that.
+
+STEP ONE:
+
+Program the function you want to do into Xpadder. For example, "Inventory", irrevocably assigned by the game to the letter "I". Do not program functions to any button that cannot spared (ie don't program Inventory to the X button). Again the buttons that can be spared are Left Shoulder, Down on the D-pad, and Back Button. Some others can also be spared but they depend on individual playstyle (Right Shoulder and Right trigger).
+
+STEP TWO:
+
+In order to prevent conflicts between the game engine's commands and Xpadder, you'll need to delete the contents of the parentheses for whichever button you're changing.
+
+As an example:
+
+Code:
+
+From this:
+
+IK_Pad_LeftShoulder=(Gamekey=GI_Hotkey07,Value=1.000000)
+
+to this:
+
+IK_Pad_LeftShoulder=()
+
+This prevents the game from doing things you didn't want to do. It tells the game that no value is assigned to that button while Xpadder tells the game the letter "I" has been pressed.
+
+I hope this helps some of you and I apologize for my earlier mistake.
+Last edited by GuardianAngel42: 04-23-2012 at 01:56 AM.
+
+
+=====================================================================================================
+Solid Sawyer
+
+Thumbs up
+This looks very useful, if I run into any issues I'm gonna come back to this thread. I used a modified control scheme for Skyrim and it made things 10x better. Thanks.
+
+
+=====================================================================================================
+anub1s18
+
+i was wondering if anybody got this to work with quicksave?
+
+i changed
+
+IK_Pad_Back_Select=(GameKey="GI_TutorialHint",Valu e=1)
+
+to
+
+IK_Pad_Back_Select=(Gamekey=GI_F5,Value=1.000000)
+
+but the button remains utterly useless
+
+same with DigitDown...
+
+
+=====================================================================================================
+GuardianAngel42
+
+> quoting anub1s18 post
+
+Was the Input Settings window open when you made the changes?
+
+Were you editing User.ini or Input_QWERTY?
+
+EDIT: Alright so I just tested it and discovered that 1) you were right, it doesn't work and 2) none of the grayed out options can be assigned to the gamepad [using this method; see updated OP]
+Last edited by GuardianAngel42: 04-22-2012 at 07:05 AM.
+
+=====================================================================================================
+Bizzquik
+
+I know I'm late to the party, but I wanted to say "Thanks" for this helpful guide, and would easily recommend it to others.
+
+In particular, your help in getting the grayed-out "Map" and "Inventory" buttons to work was very helpful. I changed the "Input_QWERTY" config file settings to "()" for the Back button and Right Thumb button and then used XPadder to make my own "Map" (back button) and "Inventory" (right thumb button).
+
+Oddly enough, I tried changing the DigitDown (digital pad down) command and was successful, but then I realized that my use of the digital pad in various menus was suddenly hampered, even when I adjusted the "Key Tap Time" setting on XPadder. Took me half a second to figure out why, then realized it was only registering one out of every two presses of DigitDown as "down" because it was registering the others as "M" (for when I was having it emulate the "Map" function). LoL
+
+=====================================================================================================
+GuardianAngel42
+
+> quoting Bizzquik post
+
+You're welcome, I'm glad it was helpful.
+
+But I'm wondering, do you really mean you changed the Input_QWERTY file's entry and not the User.ini's? Because you need to change the User.ini's, not the other one's.
+
+User.ini is what the game references. Near as I can tell, Input_QWERTY is just something it references when you change the keyboard layout setting in the Options menu. It then just overwrites what's in the User.ini file and references that from there on out.
+Last edited by GuardianAngel42: 04-14-2013 at 02:22 AM.
+=====================================================================================================
+couple other post but they just amount to "wow, thank you" / "is cool"
+=====================================================================================================
