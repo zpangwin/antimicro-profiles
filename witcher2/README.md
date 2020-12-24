@@ -5,7 +5,7 @@ This has my antimicro setup for mapping xbox 360 controller => keyboard for the 
 
 unlike most of my antimicro profiles, this does not map all of the keys. Instead it relies on the default controller mappings and just adds an additional custom mapping on the guide button. 
 
-I modified my User.ini and Input_QWERTZ.ini file (on Linux, these are under `${STEAMDIR}/compatdata/20920/pfx/drive_c/users/steamuser/My Documents/Witcher 2/Config/`). It has been awhile since I played and I forget exactly what I changed. I think these may have been intermediate copies I had saved elsewhere on my drive may have been an intermediate copy of the file... I stupidly deleted my game folder awhile back but if I find my mod merge folder, I may create a repo for that.
+I modified my User.ini and Input_QWERTZ.ini file (on Linux, these are under `${STEAMDIR}/compatdata/20920/pfx/drive_c/users/steamuser/My Documents/Witcher 2/Config/`). It has been awhile since I played and I forget exactly what I changed. I think these may have been intermediate copies I had saved elsewhere on my drive may have been an intermediate copy of the file... I stupidly deleted my game folder awhile back and don't have the final copies anymore.
 
 In my Input_QWERTZ.ini, I have made the following changes (there might be others as well; I recommend comparing mine to the original with WinMerge or Meld or a similar diff tool):
 
