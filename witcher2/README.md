@@ -34,7 +34,7 @@ Number of Profiles: 1
 #### Set \#1
 
 | Xbox 360 Controller    | Maps to                 | Description |
-| ====================== | ======================= | =============================== |
+| :--------------------- | :---------------------- | :------------------------------ |
 | Guide button           | G key                   | custom binding for cat eye effect mod |
 
 Note 1: Everything else was unmapped to avoid conflicts with the default controls (e.g. antimicro was just adding some additional mappings)
