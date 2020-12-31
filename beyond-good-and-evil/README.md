@@ -26,7 +26,8 @@ Number of Sets: 1
 | Left joystick          | WASD keys               | Movement |
 | Right joystick         | Mouse directions        | Camera |
 | D-Pad Up, Down         | Up, Down arrow keys     | Switch Companions |
-| D-Pad Left, Right      | Left, Right arrow keys  | Switch Items |
+| D-Pad Left             | 2 key                   | Prev Item |
+| D-Pad Right            | 3 key                   | Next Item |
 | Right trigger          | Left Mouse button       | Attack/Interact/Take Picture/Shoot |
 | Left trigger           | Right Mouse button      | Roll/Evade/Shoot disc, jump/attach/detach vehicles |
 | A button               | Space key               | Run/Vehicle Acceleration/View menu item info |
@@ -36,8 +37,8 @@ Number of Sets: 1
 | Guide button           | Left Shift key          | Enter Photo Mode |
 | Back button            | Tab key                 | View map/Read emails |
 | Start button           | Esc key                 | Pause/Subscreen menu/Inventory |
-| Left Bumper            | Mouse Wheel Up          | Zoom in during Photo Mode |
-| Right Bumper           | Mouse Wheel Down        | Zoom out during Photo Mode |
+| Left Bumper            | Mouse Wheel Down        | Zoom out during Photo Mode |
+| Right Bumper           | Mouse Wheel Up          | Zoom in during Photo Mode |
 | Right Stick (press)    | C key                   | Recenter Camera |
 
 ----------------------------------
