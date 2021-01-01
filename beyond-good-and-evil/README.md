@@ -11,6 +11,26 @@ I have created 2 profiles. The main difference is that I have switched the role 
 
 I have named them accordingly: Beyond-good-and-evil_trigger_is_attack and Beyond-good-and-evil_trigger_is_run. The latter is more similar to the original console mappings while the former is more customized and IMHO closer to most shooter games.
 
+## Steam version
+
+Note that the Steam version of the game defaults to having controller support (according to many posts online this wasn't always the case). Unfortunately, Ubisoft just hard-coded some controller mappings and gave no ability to edit layout or disable controller detection in the game.
+
+Luckily, there is a way to tell wine not to share the controller with the game which effectively lets us still map from controller -> antimicro -> keyboard and the game will still pick up the mapped keyboard bindings without issue.
+
+To disable your controller for this game:
+
+    WINEPREFIX="$HOME/.steam/steam/steamapps/compatdata/15130/pfx" wine64 regedit
+
+Then either:
+
+a. Download [my reg file](https://raw.githubusercontent.com/zpangwin/antimicro-profiles/master/beyond-good-and-evil/disable-controller-in-current-wineprefix.reg) and from the top-left of regedit > Registry > Import Registry File > select disable-controller-in-current-wineprefix.reg > Open > OK
+
+b. Manually create the value by browsing to `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WineBus` then creating a DWORD called `Enable SDL` with value "0"
+
+credit goes to /u/ZarathustraDK on reddit for sharing this technique [here](https://www.reddit.com/r/wine_gaming/comments/hf5u14/wine_control_panel_controller_configuration/). (note: his post mentions deleting entries containing VID_3344 but you shouldn't need to do this to simply disable the controller from appearing)
+
+The GOG version doesn't have controller support so you can skip this entire process there (although theoretically, it shouldn't hurt anything and could be useful if it someday started having forced controller support similarly to the steam version).
+
 ----------------------------------
 
 ### "trigger_is_attack" Profile
